@@ -1,0 +1,60 @@
+@import "tailwindcss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontainer {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border: 5px solid #fff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.subcontainer .form-container{
+    margin: 10px;
+    width: 70%;
+}
+.subcontainer .form-container h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.subcontainer .form-container form .input-label{
+    position: absolute;
+}
+.subcontainer .form-container form input {
+    width: 50%;
+    border: 1px solid white;
+}
+.subcontainer .image-banner{
+    width: 30%;
+}
+.form-container .login-form fieldset{
+    margin-bottom: 10px;
+}
+.form-container .login-form fieldset label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-container .login-form fieldset input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
