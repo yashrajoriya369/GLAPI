@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,54 +8,108 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-family: "Poppins", serif;
 }
-.main-container{
+.form-container{
+    width: 100%;
+}
+.form-container .image-banner{
+    width: 45%;
+    margin: 2px;
+}
+.form-container .image-banner img{
+    width: 100%;
+    height: 99vh;
+}
+.form-container .login-form{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.subcontainer {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    width: 80%;
-    height: 80%;
-    border: 5px solid #fff;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.subcontainer .form-container{
-    margin: 10px;
-    width: 70%;
-}
-.subcontainer .form-container h2{
+.form-container .login-form .main-login-form h2{
+    font-size: 4rem;
+    font-weight: 900;
     text-align: center;
-    font-size: 3rem;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    color: #2B2B2B;
 }
-.subcontainer .form-container form .input-label{
-    position: absolute;
+.form-container .login-form .main-login-form p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #2B2B2B;
 }
-.subcontainer .form-container form input {
-    width: 50%;
-    border: 1px solid white;
+.form-container .login-form input[type=email], .form-container .login-form input[type=password]{
+    font-size: 18px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 360px;
+    border-radius: 5px;
 }
-.subcontainer .image-banner{
-    width: 30%;
+.form-container .login-form form input[type=email]{
+    margin-top: 50px;
 }
-.form-container .login-form fieldset{
-    margin-bottom: 10px;
+.form-container .login-form form .input-icon{
+    position: relative;
+    top: -32px;
+    left: 320px;
+    font-size: 20px;
 }
-.form-container .login-form fieldset label{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.form-container .login-form fieldset input{
+.form-container .login-form form .login-btn{
+    background-color: #2B2B2B;
+    color: #fff;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.form-container .login-form form .login-btn:hover{
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 0.1px #000000;
+}
+.form-container .login-form form .forgot-links{
+    color: #2B2B2B;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+.form-container .login-form form .forgot-links input[type=checkbox]{
+    color: #2B2B2B;
+    margin-right: 10px;
+}
+.form-container .login-form .main-login-form .other-links .first-level p{
+    font-size: 18px;
+}
+.form-container .login-form .main-login-form .other-links .first-level{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.form-container .login-form .main-login-form .other-links .second-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2B2B2B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-container .login-form .main-login-form .other-links .second-level hr{
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+}
+.form-container .login-form .main-login-form .other-links .third-level button{
+    border: 1px solid #2B2B2B;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+}
+.form-container .login-form .main-login-form .other-links .third-level button p{
+    color: #2B2B2B;
+    margin-left: 10px;
+    font-size: 15px;
 }
