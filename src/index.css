@@ -42,7 +42,7 @@ html,body{
     font-size: 18px;
     border: 1px solid lightgray;
     padding: 10px;
-    width: 360px;
+    width: 340px;
     border-radius: 5px;
 }
 .form-container .login-form form input[type=email]{
@@ -51,7 +51,7 @@ html,body{
 .form-container .login-form form .input-icon{
     position: relative;
     top: -32px;
-    left: 310px;
+    left: 300px;
     font-size: 20px;
 }
 .form-container .login-form form .login-btn{
