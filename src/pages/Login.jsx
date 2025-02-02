@@ -41,10 +41,10 @@ const Login = () => {
                                     <div className='second-level'>
                                         <hr /><p>or</p><hr />
                                     </div>
-                                    {/* <div className='third-level'>
+                                    <div className='third-level'>
                                         <button className='flex justify-center items-center cursor-pointer'><FcGoogle /><p>Continue with Google</p></button>
                                         <button className='flex justify-center items-center cursor-pointer'><CiTwitter /><p>Continue with Twitter</p></button>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
                         </div>
