@@ -46,7 +46,7 @@ html,body{
     border-radius: 5px;
 }
 .form-container .login-form form input[type=email]{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .form-container .login-form form .input-icon{
     position: relative;
