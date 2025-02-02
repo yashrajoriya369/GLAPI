@@ -14,7 +14,7 @@ html,body{
     width: 100%;
 }
 .form-container .image-banner{
-    width: 45%;
+    width: 35%;
     margin: 2px;
 }
 .form-container .image-banner img{
@@ -22,7 +22,7 @@ html,body{
     height: 99vh;
 }
 .form-container .login-form{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ html,body{
     font-size: 18px;
     border: 1px solid lightgray;
     padding: 10px;
-    width: 300px;
+    width: 400px;
     border-radius: 5px;
 }
 .form-container .login-form form input[type=email]{
@@ -51,7 +51,7 @@ html,body{
 .form-container .login-form form .input-icon{
     position: relative;
     top: -32px;
-    left: 300px;
+    left: 350px;
     font-size: 20px;
 }
 .form-container .login-form form .login-btn{
