@@ -15,7 +15,7 @@ const Login = () => {
                         <div className='image-banner'><img src={loginBanner} alt='image-banner' /></div>
                         <div className='login-form'>
                             <div className='main-login-form'>
-                                <h2>Login, Gla Tweets</h2>
+                                <h2>Login</h2>
                                 <p>Welcome Back!</p>
                                 <form>
                                     <label htmlFor='email'>
