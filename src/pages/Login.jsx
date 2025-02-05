@@ -1,54 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CiLogin } from "react-icons/ci";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoEyeOutline } from "react-icons/io5";
-import { FcGoogle } from "react-icons/fc";
-import { CiTwitter } from "react-icons/ci";
-import loginBanner from "../images/v1043-045a.jpg"
-import { Link } from 'react-router-dom';
+import { IoEyeOffOutline } from "react-icons/io5";
+import { use } from 'react';
+
+
 
 const Login = () => {
+    const [changePassword, setChangePassword] = useState(true);
+    const changeIcon = changePassword === true ? false : true;
     return (
         <>
-            <div className='main-container w-full h-screen'>
-                <div className='subcontainer'>
-                    <div className='form-container flex'>
-                        <div className='image-banner'><img src={loginBanner} alt='image-banner' /></div>
-                        <div className='login-form'>
-                            <div className='main-login-form'>
-                                <h2>Login</h2>
-                                <p>Welcome Back!</p>
-                                <form>
-                                    <label htmlFor='email'>
-                                        <input type='email' name='email' placeholder='example@email.com' />
-                                        <span className='input-icon text-zinc-400'><AiOutlineMail />
-                                        </span>
-                                    </label>
-                                    <label htmlFor='password'>
-                                        <input type='password' name='password' placeholder='Password' />
-                                        <span className='input-icon text-zinc-400 cursor-pointer'><IoEyeOutline /></span>
-                                    </label>
-                                    <div className='forgot-links'>
-                                        <label htmlFor='checkbox'><input className='cursor-pointer' type='checkbox' name='checkbox' />Remember me</label>
-                                        <button className='cursor-pointer'>Reset Password</button>
-                                    </div>
-                                    <button className='login-btn' type='submit'>Sign in</button>
-                                </form>
-                                <div className='other-links'>
-                                    <div className='first-level'>
-                                        <p>Don't have an account?</p>
-                                        <button>Sign up</button>
-                                    </div>
-                                    <div className='second-level'>
-                                        <hr /><p>or</p><hr />
-                                    </div>
-                                    <div className='third-level'>
-                                        <button className='flex justify-center items-center cursor-pointer'><FcGoogle /><p>Continue with Google</p></button>
-                                        <button className='flex justify-center items-center cursor-pointer'><CiTwitter /><p>Continue with Twitter</p></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div className='login-container w-full h-screen bg-zinc-900 text-white'>
+                <div className='sub-login-container'>
+                    <CiLogin className='logo-login-container' />
+                    <h1>Welcome!</h1>
+                    <p>Sign in to your account</p>
+                    <form>
+                        <AiOutlineMail className='login-friendly-icons' />
+                        <input type='email' name='email' placeholder='Email' autoComplete='off' />
+                        <span onClick={() => setChangePassword(changeIcon)}>
+                            {
+                                changeIcon ? <IoEyeOutline className='login-friendly-icons' /> : <IoEyeOffOutline className='login-friendly-icons' />
+                            }
+
+                        </span>
+                        <input type={changePassword ? "password" : "text"} name='password' placeholder='Password' />
+                        <span style={{ display: "flex", justifyContent: "space-between", marginBottom: "15px" }}><div><input type='checkbox' name='remember' />Remember me
+                        </div><a href='#' style={
+                            {
+                                fontSize: '1rem',
+                                marginRight: "0.5rem",
+                                marginBottom: '1rem',
+                                textDecoration: "underline"
+                            }
+                        }>Forgot password?</a>
+                        </span>
+                        <button className='login-submit-btn'>Sign in</button>
+                    </form>
+                    <div style={{textAlign: "center", marginTop: "10px", color: "gray"}}>Don't have a account? <span className='text-white underline'>SignUp</span></div>
                 </div>
             </div>
         </>
