@@ -67,3 +67,8 @@ html,body{
     padding: 6px;
     border-radius: 5px;
 }
+@media screen and (max-width: 380px){
+    .sub-login-container{
+        width: 90%;
+    }
+}
