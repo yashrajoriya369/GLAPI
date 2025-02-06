@@ -12,35 +12,42 @@ const Login = () => {
     const changeIcon = changePassword === true ? false : true;
     return (
         <>
-            <div className='login-container w-full h-screen bg-zinc-900 text-white'>
-                <div className='sub-login-container'>
-                    <CiLogin className='logo-login-container' />
-                    <h1>Welcome!</h1>
-                    <p>Sign in to your account</p>
-                    <form>
-                        <AiOutlineMail className='login-friendly-icons' />
-                        <input type='email' name='email' placeholder='Email' autoComplete='off' />
-                        <span onClick={() => setChangePassword(changeIcon)}>
-                            {
-                                changeIcon ? <IoEyeOutline className='login-friendly-icons' /> : <IoEyeOffOutline className='login-friendly-icons' />
-                            }
+            <div className='login-first-container'>
+                <div className='login-second-container'>
+                    <div className='login-third-container'>
+                        <div className='login-fourth-container'>
+                            <div className='login-fifth-container'>
+                                <CiLogin className='logo-login-container' />
+                                <h1>Welcome!</h1>
+                                <p>Sign in to your account</p>
+                                <form>
+                                    <AiOutlineMail className='login-friendly-icons' />
+                                    <input type='email' name='email' placeholder='Email' autoComplete='off' />
+                                    <span onClick={() => setChangePassword(changeIcon)}>
+                                        {
+                                            changeIcon ? <IoEyeOutline className='login-friendly-icons' /> : <IoEyeOffOutline className='login-friendly-icons' />
+                                        }
 
-                        </span>
-                        <input type={changePassword ? "password" : "text"} name='password' placeholder='Password' />
-                        <span style={{ display: "flex", justifyContent: "space-between", marginBottom: "15px" }}><div><input type='checkbox' name='remember' />Remember me
-                        </div><a href='#' style={
-                            {
-                                fontSize: '1rem',
-                                marginRight: "0.5rem",
-                                marginBottom: '1rem',
-                                textDecoration: "underline"
-                            }
-                        }>Forgot password?</a>
-                        </span>
-                        <button className='login-submit-btn'>Sign in</button>
-                    </form>
-                    <div style={{textAlign: "center", marginTop: "10px", color: "gray"}}>Don't have a account? <span className='text-white underline'>SignUp</span></div>
+                                    </span>
+                                    <input type={changePassword ? "password" : "text"} name='password' placeholder='Password' />
+                                    <a href='#' style={
+                                        {
+                                            fontSize: '1.1rem',
+                                            marginRight: "0.5rem",
+                                            marginBottom: '1rem',
+                                            textDecoration: "underline",
+                                            color: "#fff",
+                                            display: "block",
+                                            textAlign: "right"
+                                        }
+                                    }>Forgot password?</a>
+                                    <button className='login-submit-btn'>Sign in</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </>
     )
