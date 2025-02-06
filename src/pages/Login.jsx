@@ -3,7 +3,6 @@ import { CiLogin } from "react-icons/ci";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
-import { use } from 'react';
 
 
 
@@ -31,7 +30,7 @@ const Login = () => {
 
                                     </span>
                                     <input type={changePassword ? "password" : "text"} name='password' placeholder='Password' />
-                                    <a href='#' style={
+                                    <a className='login-reset-links' href='#' style={
                                         {
                                             fontSize: '1.1rem',
                                             marginRight: "0.5rem",
