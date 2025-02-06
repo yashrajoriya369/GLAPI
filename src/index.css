@@ -14,7 +14,7 @@ body {
 .login-first-container {
   width: 100%;
   height: 100vh;
-  background-image: url("./images/daniil-silantev-95iZ2UVvv0A-unsplash.jpg");
+  background-image: url("./images/jacek-dylag-SPpsFbCaN2A-unsplash.jpg");
   background-size: cover;
 }
 .login-second-container {
@@ -27,10 +27,10 @@ body {
 .login-first-container .login-second-container .login-third-container {
   width: 80%;
   height: 80%;
-  background-image: url("./images/daniil-silantev-95iZ2UVvv0A-unsplash.jpg");
+  /* background-image: url("./images/jacek-dylag-SPpsFbCaN2A-unsplash.jpg"); */
   background-size: cover;
-  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.25) inset;
-  border-radius: 50px;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.35) inset;
+  border-radius: 35px;
 }
 .login-first-container .login-second-container .login-third-container .login-fourth-container{
     width: 100%;
@@ -85,12 +85,19 @@ body {
 }
 .login-first-container .login-second-container .login-third-container .login-fourth-container .login-fifth-container form .login-submit-btn{
     width: 100%;
-    background-color:  #5C7285;
+    /* background-color:  #5C7285; */
+    background-color: crimson;
     font-size: 18px;
     color: #fff;
     padding: 8px;
     border-radius: 10px;
     letter-spacing: 1px;
+}
+.login-first-container .login-second-container .login-third-container .login-fourth-container .login-fifth-container form button:hover{
+  font-size: 19px;
+  padding: 9px;
+  cursor: pointer;
+
 }
 @media screen and (max-width: 480px){
     .login-first-container .login-second-container .login-third-container {
@@ -98,6 +105,5 @@ body {
       }
     .login-first-container .login-second-container .login-third-container .login-fourth-container .login-fifth-container{
         border: none;
-        
     }
 }
