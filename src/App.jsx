@@ -2,8 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './pages/login/Login.jsx';
 import Home from './pages/home/Home';
-import Layout from './components/Layout';
-import Contact from './pages/Contact.jsx';
+import Layout from './components/layout/Layout.jsx';
 
 function App() {
   return (
@@ -11,10 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            {/* <Route index element={<Home />} /> */}
-            <Route index element={<Login />} />
+            <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
-            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>
