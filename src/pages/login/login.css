@@ -1,0 +1,175 @@
+.login-first-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/loginPage_Banner.jpg");
+  background-size: cover;
+}
+.login-second-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-first-container .login-second-container .login-third-container {
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.35) inset;
+  border-radius: 35px;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container {
+  border: 3px solid #fff;
+  border-radius: 10%;
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container
+  .logo-login-container {
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container
+  h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container
+  p {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container
+  form
+  input {
+  border-bottom: 1px solid #fff;
+  width: 95%;
+  padding: 8px;
+  margin: 5px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container
+  form
+  input:focus {
+  outline: none;
+}
+.login-first-container
+  .login-second-container
+  .login-third-container
+  .login-fourth-container
+  .login-fifth-container
+  form
+  .login-friendly-icons {
+  font-size: 19px;
+  position: relative;
+  left: 88%;
+  top: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+button {
+    width: 100%;
+    appearance: none;
+    background-color: coral;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   button:disabled {
+    pointer-events: none;
+   }
+   
+   button:hover {
+    color: #fff;
+    background-color: #ff5a1d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+@media screen and (max-width: 480px) {
+  .login-first-container .login-second-container .login-third-container {
+    width: 90%;
+  }
+  .login-first-container
+    .login-second-container
+    .login-third-container
+    .login-fourth-container
+    .login-fifth-container {
+    border: none;
+  }
+  .login-first-container
+    .login-second-container
+    .login-third-container
+    .login-fourth-container
+    .login-fifth-container
+    form
+    .login-reset-links {
+    font-size: 13px !important;
+  }
+}
