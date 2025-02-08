@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import { FaUserAlt } from 'react-icons/fa'
+import { CiUser } from "react-icons/ci";
 
 const Header = () => {
     return (
@@ -26,7 +26,8 @@ const Header = () => {
                         </label>
                     </div>
                 </div>
-                <div className='user-profile'><div className='user-image'><FaUserAlt className='icon' /></div><div className='username'>Username</div></div>
+                <div className='user-profile'><div className='user-image'><CiUser
+                    className='icon' /></div><div className='username'>Username</div></div>
             </div>
         </>
     )
