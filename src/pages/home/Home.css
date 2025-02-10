@@ -1,0 +1,75 @@
+.home-container {
+  display: flex;
+  width: 100%;
+  height: 92vh;
+}
+.first-sub-container {
+    width: 15%;
+    overflow: hidden;
+}
+.first-sub-container .sub-container-first-nav div{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+}
+.first-sub-container .sub-container-first-nav .home{
+    margin-top: 20px;
+}
+.first-sub-container .sub-container-first-nav div .home-icon, .first-sub-container .sub-container-first-nav div .profile-icon{
+    font-size: 1.4rem;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    color: #e0e0e0;
+
+}
+.first-sub-container .sub-container-second-nav p{
+    margin: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.first-sub-container .sub-container-second-nav ul li{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.first-sub-container .sub-container-second-nav ul li .icons{
+    font-size: 1.3rem;
+    margin-right: 15px;
+}
+.first-sub-container .sub-container-third-nav p{
+    margin: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.first-sub-container .sub-container-third-nav div{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.first-sub-container .sub-container-third-nav div ul li{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.first-sub-container .sub-container-third-nav div ul li img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.second-sub-container {
+    width: 60%;
+}
+.third-sub-container {
+    width: 25%;
+}

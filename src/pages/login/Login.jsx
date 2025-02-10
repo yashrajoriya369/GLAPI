@@ -39,7 +39,7 @@ const Login = () => {
                                             display: "block",
                                             textAlign: "right"
                                         }
-                                    }>Forgot password?</a>
+                                    }>forgot password?</a>
                                     <button className='login-submit-btn'>Sign in</button>
                                 </form>
                             </div>

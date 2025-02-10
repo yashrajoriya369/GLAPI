@@ -1,10 +1,10 @@
 .main-header {
-  background-color: #faf8f6;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding: 12px;
+  height: 8vh;
 }
 .sub-main-header {
   display: flex;
@@ -13,11 +13,11 @@
   width: 50%;
 }
 .sub-main-header .appName {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-left: 10%;
-  letter-spacing: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 6%;
+  font: bolder;
   color: coral;
 }
 .user-profile {
@@ -33,7 +33,7 @@
   height: 40px;
   border-radius: 50%;
   margin-right: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   cursor: pointer;
 }
 .user-profile .icons .chat-icon,
@@ -47,17 +47,18 @@
   display: flex;
   align-items: center;
 }
-.user-profile .profile {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 20px;
+.user-profile .profile .third-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  cursor: pointer;
 }
 .user-profile .profile .third-icon .user-icon {
+  position: relative;
+  top: 10px;
+  left: 10px;
   font-size: 1.2rem;
   margin-right: 10px;
 }

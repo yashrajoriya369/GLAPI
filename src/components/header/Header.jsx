@@ -11,8 +11,8 @@ const Header = () => {
         <>
             <div className='main-header'>
                 <div className='sub-main-header'>
-                    <div className='appName'><span>S.R.Y.N</span></div>
-                    <div className="InputContainer">
+                    <div className='appName'><span>WOLFY</span></div>
+                    <div className="InputContainer" style={{backgroundColor: "#e0e0e0"}}>
                         <input
                             placeholder="Search"
                             id="input"
@@ -35,11 +35,10 @@ const Header = () => {
                         <div className='first-icon'><IoChatbubblesOutline className='chat-icon' /></div>
                         <div className='second-icon'><CiBellOn className='bell-icon' /></div>
                     </div>
-                    <div className='profile'>
+                    <div className='profile' style={{display: "block"}}>
                         <div className='third-icon'><FaUser className='user-icon' /></div>
-                        <div className='username'>Username</div>
                     </div>
-                    <Link className='login-sign'>Login</Link>
+                    <Link to="/login" className='login-sign' style={{display: "none"}}>Login</Link>
                 </div>
             </div>
         </>
