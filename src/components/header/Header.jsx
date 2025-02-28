@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <div className='main-header'>
+            <div className='main-header tracking-tighter'>
                 <div className='sub-main-header'>
                     <div className='appName'><span>WOLFY</span></div>
                     <div className="InputContainer" style={{backgroundColor: "#e0e0e0"}}>

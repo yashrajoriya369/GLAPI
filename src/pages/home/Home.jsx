@@ -9,11 +9,12 @@ import { RiMemoriesFill } from "react-icons/ri";
 import { CiHome } from "react-icons/ci";
 import { GiEgyptianProfile } from "react-icons/gi";
 import group_Img from "../../images/group.jpg";
+import Create from "../../components/post/Create";
 
 const Home = () => {
   return (
     <>
-      <div className='home-container'>
+      <div className='home-container tracking-tighter'>
         <div className='first-sub-container'>
           <div className='sub-container-first-nav'>
             <div className='home'>
@@ -51,7 +52,12 @@ const Home = () => {
               </div>
             </div>
         </div>
-        <div className='second-sub-container bg-zinc-500'>SECOND</div>
+        <div className='second-sub-container bg-zinc-500'>
+          {/* <div className='create-post'> */}
+          <div>
+            <Create />
+          </div>
+        </div>
         <div className='third-sub-container bg-zinc-400'>THIRD</div>
       </div>
     </>
